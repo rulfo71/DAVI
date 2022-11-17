@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.13.0]
+        node-version: [18.12.1]
     steps:
       - name: Inject workflow information
         uses: potiuk/get-workflow-origin@v1_3
@@ -42,3 +42,4 @@ jobs:
         with:
           name: ${{ steps.workflow-run-info.outputs.targetCommitSha }}
           path: build/
+

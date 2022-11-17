@@ -24,7 +24,7 @@
     "pre-commit": "lint-staged"
   },
   "engines": {
-    "node": "^16.13.0"
+    "node": "^18.12.1"
   },
   "repository": {
     "type": "git",
