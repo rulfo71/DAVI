@@ -1,6 +1,6 @@
 import { FullGovernanceImplementation } from 'stores/types';
 import { useProposal, useSnapshotId } from '../common/fetchers';
-import { useTotalLocked } from './fetchers/rpc';
+import { useTotalLocked, useVotingPowerOf } from './fetchers/rpc';
 import { checkDataSourceAvailability } from './checkDataSourceAvailability';
 
 /* 
@@ -20,11 +20,13 @@ export const snapshotERC20GuildImplementation: Readonly<FullGovernanceImplementa
           useProposal,
           useSnapshotId,
           useTotalLocked,
+          useVotingPowerOf,
         },
         fallback: {
           useProposal,
           useSnapshotId,
           useTotalLocked,
+          useVotingPowerOf,
         },
       },
       writers: null,
